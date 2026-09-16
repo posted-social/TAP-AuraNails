@@ -181,14 +181,25 @@
     line-height: 1.35;
     color: var(--aura-espresso);
   }
-  .visit__soon {
-    margin-top: 0.95rem;
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 1.08rem;
-    letter-spacing: 0.01em;
-    color: var(--aura-taupe);
+
+  .visit__hours {
+    margin: 1.1rem auto 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 1.1rem;
+    row-gap: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--aura-charcoal);
+    text-align: left;
   }
+  .visit__hours dt {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--aura-espresso);
+  }
+  .visit__hours dd { margin: 0; }
 
   .visit__rule {
     width: 38px; height: 1px;
@@ -276,7 +287,7 @@
     <!-- HERO -->
     <section class="hero reveal d1">
       <h1 class="sr-only">Aura Nail Atelier &amp; Head Spa</h1>
-      <p class="label">Opening Soon in WingHaven</p>
+      <p class="label">WingHaven, O&rsquo;Fallon</p>
       <img class="hero__logo"
            src="https://assets.cdn.filesafe.space/HWLkcDtPFyefiPQ26HGp/media/6a317a06a20786fa2d81f158.png"
            alt="Aura Nail Atelier &amp; Head Spa">
@@ -329,7 +340,11 @@
     <section class="visit reveal d5">
       <span class="label">Visit Us</span>
       <p class="visit__addr">3042 WingHaven Blvd.<br>O&rsquo;Fallon, MO 63368</p>
-      <p class="visit__soon">Opening soon</p>
+      <dl class="visit__hours">
+        <dt>Mon to Fri</dt><dd>9:30 AM to 7:30 PM</dd>
+        <dt>Sat</dt><dd>9:30 AM to 6:00 PM</dd>
+        <dt>Sun</dt><dd>11:00 AM to 5:00 PM</dd>
+      </dl>
       <hr class="visit__rule">
       <a class="ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Aura+Nail+Atelier+3042+WingHaven+Blvd+O%27Fallon+MO+63368" target="_blank" rel="noopener noreferrer">Get Directions</a>
       <a class="visit__call" href="tel:+16366254545">636-625-4545</a>
